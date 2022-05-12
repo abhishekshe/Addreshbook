@@ -19,6 +19,13 @@ namespace AddressBook
                 contactPersonInformation.DisplayContactDetails();
 
             }
+            Console.WriteLine("Do you want to delete anything from contact details");
+            string inputForDelete = Console.ReadLine();
+            if (inputForDelete.ToLower() == "y")
+            {
+                contactPersonInformation.DeletingContactDetails();
+                contactPersonInformation.DisplayContactDetails();
+            }
         }
     }
 }

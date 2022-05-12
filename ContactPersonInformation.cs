@@ -35,7 +35,7 @@ namespace AddressBook
                 double phoneNo = Convert.ToDouble(Console.ReadLine());
                 if (phoneNo <= 200000)
                 {
-                    
+                    //Console.WriteLine("Please enter a valid Phone no.");
                     nLog.LogError("Entered Wrong Phone no. : AdditionContactDetails()");
                     Console.WriteLine("Wrong phone details entered, please enter your details again");
                     goto Repeat;
@@ -76,6 +76,7 @@ namespace AddressBook
         addingDetailsAgainForEditing: Console.WriteLine("Please help us, first identify you");
             Console.WriteLine("Please enter your first name and phone no");
             string firstNm = Console.ReadLine();
+            int editCheck = 0;
             double mobileNo = Convert.ToDouble(Console.ReadLine());
             foreach (ContactDetails contactDetails in contactDetailsList)
             {
@@ -83,6 +84,7 @@ namespace AddressBook
                 {
                 EditAgain: Console.WriteLine("please select the serial no. of field which you want to change\n 1. First name \n2.Last name\n3.Address\n4.City\n5.State\n6.Zip code\n7.Phone no.\n 8.email");
                     int inputForEditing = Convert.ToInt32(Console.ReadLine());
+                    editCheck++;
                     switch (inputForEditing)
                     {
                         case 1:
@@ -282,22 +284,68 @@ namespace AddressBook
 
                     }
                 }
-                else
-                {
-                    Console.WriteLine("Your input does not match our data");
-                    Console.WriteLine("Do you want to input again, press y to input details");
-                    nLog.LogError("Wrong details entered for editing");
-                    string check = Console.ReadLine();
-                    if (check.ToLower() == "y")
-                    {
-                        nLog.LogInfo("details are being entered again by user");
-                        goto addingDetailsAgainForEditing;
-                    }
-                }
+
                 
 
             }
+            
+            if (editCheck == 0)
+            {
+                Console.WriteLine("It looks like you are entering wrong details");
+                nLog.LogError("Wrong details entered for editing");
+                nLog.LogInfo("Nothing has been edited");
+            }
+            Console.WriteLine("Do you want to input again, press y to input details");
+
+            string check = Console.ReadLine();
+            if (check.ToLower() == "y")
+            {
+                nLog.LogInfo("details are being entered again by user");
+                goto addingDetailsAgainForEditing;
+            }
             contact.DisplayContactDetails();
+        }
+        public void DeletingContactDetails()
+        {
+        addingDetailsForDeleting: Console.WriteLine("Please help us, first identify you");
+            Console.WriteLine("Please enter your first name and phone no");
+            string firstNm = Console.ReadLine();
+            double mobileNo = Convert.ToDouble(Console.ReadLine());
+            int index = 0;
+            foreach (ContactDetails contactDetails in contactDetailsList)
+            {
+                if (contactDetails.firstName == firstNm && contactDetails.phoneNo == mobileNo)
+                {
+                    contactDetailsList.Remove(contactDetails);
+                    Console.WriteLine("deletion operation successful");
+                    nLog.LogDebug("Deletion Operation Successful:DeletingContactDetails()");
+                    index++;
+                    break;
+
+
+                }
+
+            }
+            
+            if (index == 0)
+            {
+                Console.WriteLine("It looks like you are entering wrong details");
+                nLog.LogError("Wrong details entered for deleting");
+                nLog.LogInfo("Nothing has been deleted");
+            }
+            Console.WriteLine("Do you want to input again, press y to input details");
+
+            string check = Console.ReadLine();
+            if (check.ToLower() == "y")
+            {
+                nLog.LogInfo("details are being entered again by user:DeletingContactDetails()");
+                goto addingDetailsForDeleting;
+            }
+            else
+            {
+                nLog.LogInfo("Process Completed");
+            }
+
         }
     }
 
