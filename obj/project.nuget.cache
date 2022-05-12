@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "fFBigSh+cRkIEgpw00abUKZaArooV+wkisOl0d712/6VH1FtSMoTxlS5NFQMD2cfiOszsaF9VHm+N7nXPf0BfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\AddresBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\nlog\\4.7.15\\nlog.4.7.15.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\nlog.extensions.logging\\1.7.4\\nlog.extensions.logging.1.7.4.nupkg.sha512"
+  ],
+  "logs": []
+}

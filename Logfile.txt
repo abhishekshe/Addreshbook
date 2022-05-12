@@ -1,0 +1,4 @@
+﻿2022-05-12 14:02:40.7244|WARN|AddressBook.NLog|Entered Wrong Phone no. : AdditionContactDetails()
+2022-05-12 14:02:40.7461|INFO|AddressBook.NLog|Contact Details Addition Successful: AddingContactDetails()
+2022-05-12 14:02:40.7461|WARN|AddressBook.NLog|Entered Wrong Phone no. : AdditionContactDetails()
+2022-05-12 14:02:40.7461|INFO|AddressBook.NLog|Contact Details Addition Successful: AddingContactDetails()
