@@ -19,9 +19,9 @@ namespace AddressBook
                 contactPersonInformation.DisplayContactDetails();
 
             }
-            Console.WriteLine("Do you want to delete anything from contact details");
+            Console.WriteLine("Do you want to delete anything from contact details, press y for delete");
             string inputForDelete = Console.ReadLine();
-            if (inputForDelete.ToLower() == "y")
+            if (inputForDelete.ToLower() == "y" || inputForDelete == "Y")
             {
                 contactPersonInformation.DeletingContactDetails();
                 contactPersonInformation.DisplayContactDetails();

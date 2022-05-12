@@ -35,7 +35,7 @@ namespace AddressBook
                 double phoneNo = Convert.ToDouble(Console.ReadLine());
                 if (phoneNo <= 200000)
                 {
-                    //Console.WriteLine("Please enter a valid Phone no.");
+                    
                     nLog.LogError("Entered Wrong Phone no. : AdditionContactDetails()");
                     Console.WriteLine("Wrong phone details entered, please enter your details again");
                     goto Repeat;
