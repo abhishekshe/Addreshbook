@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abhis\\source\\repos\\Main\\Main\\Main.csproj": {}
+    "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\AddresBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abhis\\source\\repos\\Main\\Main\\Main.csproj": {
+    "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\AddresBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abhis\\source\\repos\\Main\\Main\\Main.csproj",
-        "projectName": "Main",
-        "projectPath": "C:\\Users\\abhis\\source\\repos\\Main\\Main\\Main.csproj",
+        "projectUniqueName": "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\AddresBook.csproj",
+        "projectName": "AddresBook",
+        "projectPath": "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\AddresBook.csproj",
         "packagesPath": "C:\\Users\\abhis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abhis\\source\\repos\\Main\\Main\\obj\\",
+        "outputPath": "C:\\Users\\abhis\\source\\repos\\AddresBook\\AddresBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abhis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.15, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
