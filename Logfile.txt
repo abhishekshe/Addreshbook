@@ -14,3 +14,4 @@
 2022-05-12 15:14:51.9281|INFO|AddressBook.NLog|No more contact details have been entered
 2022-05-12 15:14:51.9281|DEBUG|AddressBook.NLog|Displaying Contact Details Successful :DisplayingContactDetails()
 2022-05-12 15:14:51.9281|DEBUG|AddressBook.NLog|Displaying Contact Details Successful :DisplayingContactDetails()
+2022-05-12 15:23:17.7758|DEBUG|AddressBook.NLog|Displaying Contact Details Successful :DisplayingContactDetails()
